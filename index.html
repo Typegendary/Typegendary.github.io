@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script src="./js/jquery-2.0.0.min.js"></script>
 	<title>Typegendary 2</title>
 	<style type="text/css">
 	body {
@@ -29,7 +30,12 @@
 		</tr>
 	</table>
 	<div class="footer" align="center">
-		<p>Copyright ©2019 NjnuPigeons</p>
+		<p>Copyright ©2019-<span id="year"></span> NjnuPigeons</p>
 	</div>
 </body>
+<script>
+	var date=new Date;
+	var year=date.getFullYear().toString();
+	$('#year').html(year);
+</script>
 </html>
