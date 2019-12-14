@@ -5,6 +5,7 @@
 	<title>Typegendary 2</title>
 	<style type="text/css">
 	body {
+		background-color: lightskyblue;
 		margin-left: 50px;
 		margin-top: 50px;
 		margin-right: 50px;
@@ -17,9 +18,20 @@
 		height: 100px;
 		left: 25%;
 	}
+	p#ICP {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			cursor: pointer;
+	}
+	p#ICP:hover {
+		color: blue;
+		font-style: italic;
+	}
 	</style>
 </head>
-<body bgcolor="#99E0FF">
+<body>
 	<h1>Typegendary 2 现已开始策划</h1>
 	<div>
 	  <hr>
@@ -30,8 +42,9 @@
 		</tr>
 	</table>
 	<div class="footer" align="center">
-		<p>Copyright ©2019-<span id="year"></span> NjnuPigeons</p>
+		<p>Copyright ©<span>2019</span>-<span id="year"></span> NjnuPigeons</p>
 	</div>
+	<p id="ICP"><a onclick="self.location='http://beian.miit.gov.cn'">苏ICP备19012435号-1</a></p>
 </body>
 <script>
 	var date=new Date;
